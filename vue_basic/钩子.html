@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>钩子函数</title>
+</head>
+<body>
+    <div id="app">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                a:2
+            },
+            created() {
+                console.log(this.a)//2
+            },
+            mounted() {
+                console.log(this.$el);//<div id="app"></div>
+            },
+        })
+    </script>
+</body>
+</html>
