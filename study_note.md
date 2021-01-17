@@ -36,6 +36,12 @@
 		+ 定义方法时需要定义形参来接受传入的实参
 		+ 事件的后面跟上<span style="color:red">.修饰符</span>可以对事件进行限制
 		+ <span style="color:red">.enter</span>可以限制触发的按键为回车
+		+ @click.stop="dolt"
+		+ .stop 阻止冒泡
+		+ .prevent 阻止默认行为
+		+ .capture 实现捕获机制
+		+ .self 实现只有元素点击的时候才会触发
+		+ .once 只触发一次事件处理函数
 	+ v-show  <span style="color:red">操作样式（对比v-if），频繁操作推荐使用</span> 
 		+ v-show 指令作用是：根据真假切换元素的显示状态
 		+ 原理是修改元素的display，实现显示隐藏
@@ -95,5 +101,5 @@
 	+ <span style="color:red">mounted el 挂在到实例上后调用</span>，一般我们的第一个业务逻辑会在这里开始。
 	+ <span style="color:red">beforeDestroy实例销毁之前调用，主要解绑一些使用addEventListener监听的事件等</span>
 	+ 这些钩子与el和data类似，也是作为选项写入Vue实例内，并且钩子的this指向的是调用它的Vue实例
+	+ <img src="../vue_study/img/1531106989.png">
   
-		 
