@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>comman</title>
+		<style type="text/css">
+			.active{
+				border: 2px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <div id="app">
+			<h2 v-text="message + '!' "></h2>
+			<h2>zjx{{message + "!"}} </h2>
+		</div> -->
+		<!-- <div id="app">
+			<p v-html="content"></p>
+			<p v-text="content"></p>
+		</div> -->
+		<!-- <div id="app">
+			<input type="button" name="" id="" value="v-on指令"v-on:click="doIt" />
+			<input type="button" name="" id="" value="v-on简写" @click="doIt" />
+			<input type="button" name="" id="" value="双击事件"  @dblclick="doIt" />
+			<h2 @click="changeFood">{{food}}</h2>
+		</div> -->
+		<!-- <div id="app">
+			<input type="button" name="" id="" value="切换显示状态" @click="changeIsShow" />
+			<img src="logo.png" v-show="age >= 16" >
+			<img src="logo.png" v-show="isShow" >
+		</div> -->
+		
+		<!-- <div id="app">
+			<input type="button" name="" id="" value="切换显示" @click="toggleIsShow" />
+			<p v-if="isShow">zjx</p>
+			<p v-show="isShow">zjx - v-show</p>
+		</div> -->
+		<!-- <div id="app">
+			<img v-bind:src="imgSrc" :title="imgTitle + '!!!'"  v-bind:class="isActive?'active':''"  @click="toggleActive">
+			<br>
+			<img v-bind:src="imgSrc" :title="imgTitle + '!!!'"  v-bind:class="{active:isActive}"  @click="toggleActive">
+			<br>
+		</div> -->
+		<div id="app">
+			<input type="button" name="" id="" value="点击" @click="doIt(666,'老铁字')" />
+			<input type="text" name="" id="" value="" @keyup.enter="sayHi"/ >
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script type="text/javascript">
+			// var app = new Vue({
+			// 	el:"#app",
+			// 	data:{
+			// 		message:"web",
+			// 	}
+			// // })
+			
+			// var app = new Vue({
+			// 	el:"#app",
+			// 	data:{
+			// 		food:"西瓜"
+			// 	},
+			// 	methods:{
+			// 		doIt:function(){
+			// 			alert("do IT")
+			// 		},
+			// 		changeFood:function(){
+			// 			this.food+="好好吃"
+			// 		}
+			// 	}
+			// })
+			
+			// var app = new Vue({
+			// 	el:"#app",
+			// 	data:{
+			// 		isShow:true,
+			// 		age:16
+			// 	},
+			// 	methods:{
+			// 		changeIsShow:function(){
+			// 			this.isShow = !this.isShow;
+			// 		}
+			// 	}
+			// })
+			// var app = new Vue({
+			// 	el:"#app",
+			// 	data:{
+			// 		isShow:false
+			// 	},
+			// 	methods:{
+			// 		toggleIsShow:function(){
+			// 			this.isShow = !this.isShow;
+			// 		}
+			// 	}
+			// })
+			// var app = new Vue({
+			// 	el:"#app",
+			// 	data:{
+			// 		imgSrc:"logo.png",
+			// 		imgTitle:"zjx",
+			// 		isActive:false,
+			// 	},
+			// 	methods:{
+			// 		toggleActive:function(){
+			// 			this.isActive = !this.isActive;
+			// 		}
+			// 	}
+			// })
+			var app = new Vue({
+				el:"#app",
+				data:{
+					
+				},
+				methods:{
+					doIt:function(p1,p2){
+						console.log(p1);
+						console.log(p2);
+					},
+					sayHi:function(){
+						alert("zjx");
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

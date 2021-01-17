@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数据列表</title>
+	</head>
+	<body>
+		<div id="app">
+			<input type="button" name="" id="" value="添加"  @click="add"/>
+			<input type="button" name="" id="" value="删除" @click="remove"/>
+			<ul>
+				<li v-for=" item,index in arr">
+					{{index+1}}zjx{{ item }}
+				</li>
+			</ul>
+			<h2 v-for="item,index in vegetablr" :title="item.name">
+				{{index +1}}你爱吃的{{item.name}}
+			</h2>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script type="text/javascript">
+			var app =new Vue({
+				el:"#app",
+				data:{
+					arr:["你","是","最","棒","的"],
+					vegetablr:[
+						{name:"宫保鸡丁"},
+						{name:"鱼香茄子"}
+					]
+				},
+				methods:{
+					add:function(){
+						this.vegetablr.push({name:"菜花炒蛋"})
+					},
+					remove:function(){
+						this.vegetablr.shift()
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
