@@ -101,5 +101,4 @@
 	+ <span style="color:red">mounted el 挂在到实例上后调用</span>，一般我们的第一个业务逻辑会在这里开始。
 	+ <span style="color:red">beforeDestroy实例销毁之前调用，主要解绑一些使用addEventListener监听的事件等</span>
 	+ 这些钩子与el和data类似，也是作为选项写入Vue实例内，并且钩子的this指向的是调用它的Vue实例
-	+ <img src="../vue_study/img/1531106989.png">
-  
+	+ ![生命周期](./img/1531106989.png)
